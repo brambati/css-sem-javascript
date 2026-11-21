@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PixelStudio · versão sem JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="logo">Pixel<b>Studio</b></div>
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#faq">Dúvidas</a>
+      <a href="#contato">Contato</a>
+      <button class="btn" popovertarget="modal">Orçamento</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Sites rápidos, bonitos e sem JavaScript à toa.</h1>
+      <p>Estúdio fictício criado para o vídeo 23. Role a página e teste cada recurso.</p>
+      <a class="btn" href="#contato">Falar com a gente</a>
+    </section>
+
+    <section id="servicos">
+      <h2>Serviços</h2>
+      <div class="cards">
+        <div class="card"><h3>Landing page</h3><p>Uma página focada em conversão.</p>
+          <span class="selo" tabindex="0">Entrega em 7 dias</span>
+          <span class="dica" role="tooltip">Prazo médio para landing pages simples.</span>
+        </div>
+        <div class="card"><h3>Site institucional</h3><p>Até 8 páginas, com blog.</p></div>
+        <div class="card"><h3>Loja virtual</h3><p>Catálogo, carrinho e pagamento.</p></div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>Dúvidas frequentes</h2>
+      <details name="faq"><summary>Quanto tempo leva?</summary><p class="resposta">De 7 a 30 dias, conforme o projeto.</p></details>
+      <details name="faq"><summary>O site funciona no celular?</summary><p class="resposta">Sim, todos os sites são responsivos.</p></details>
+      <details name="faq"><summary>Vocês cuidam da hospedagem?</summary><p class="resposta">Sim, com domínio e e-mail inclusos.</p></details>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <form>
+        <label>E-mail <input type="email" required placeholder="voce@email.com"></label>
+        <p class="erro">Digite um e-mail válido.</p>
+        <button class="btn">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>© 2026 PixelStudio · estúdio fictício, exemplo de tutorial</footer>
+
+  <div class="modal" id="modal" popover>
+    <h3>Pedir orçamento</h3>
+    <p>Responda em 2 minutos e receba uma proposta.</p>
+    <button class="btn" popovertarget="modal" popovertargetaction="hide">Fechar</button>
+  </div>
+</body>
+</html>
